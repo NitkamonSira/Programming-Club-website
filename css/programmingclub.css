@@ -1,18 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+body {
+    font-family: 'Public sans';
+    margin: 0;
+}
 section.hero-img {
-    background-image: none;
+    color: white;
+    background-color: rgb(68, 68, 68);
+    /* background-image: none; */
     height: 400px;
     text-align: center;
+    font-size: 5vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1.title {
+    margin-top: 0;
+    padding: 1em;
+    font-size: auto;
+    text-align: left;
+
 }
 section.heading {
     background-color: #003A2C;
 }
 
 img.logo {
-    /* width: 15%; */
-    height: 100px;
+    width: 15%;
     text-align: left;
+    margin: 10px;
 }
 
 div.gridlayout {
     display: grid;
+}
+h2 {
+    margin: 0.5em 1em;
+}
+h3 {
+    margin: 2em;
+}
+p {
+    margin: 1em 3em;
+}
+div.intro {
+    display: grid;
+    grid-template-columns: 50%;
+}
+h2.intro-title {
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+p.intro-info {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    /* width: 50%; */
+}
+img.intro {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+div.room {
+    background-color: #004E42;
+    color: white;
+}
+
+div.teacher {}
+
+div.history {
+    background-color: #003A2C;
+    color: white;
+
+}
+
+div.level {}
+img.learning {
+    margin: 1em;
+    width: 40%;
+}
+div.timeline {
+    background-color: #004E42;
+    color: white;
+
+}
+
+div.contest {}
+
+div.resource {
+    background-color: #003A2C;
+    color: white;
+    
+}
+
+div.about {}
+
+div.licence {
+    background-color: #004E42;
+    color: white;
 }
