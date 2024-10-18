@@ -6,8 +6,7 @@ body {
 section.hero-img {
     color: white;
     background-color: rgb(68, 68, 68);
-    /* background-image: none; */
-    height: 400px;
+    background-image: url(../images/hero\ img.png);
     text-align: center;
     font-size: 5vw;
     background-position: center;
@@ -17,23 +16,28 @@ section.hero-img {
 
 h1.title {
     margin-top: 0;
+    margin-bottom: 0;
     padding: 1em;
     font-size: auto;
     text-align: left;
 
 }
 section.heading {
+    display: grid;
     background-color: #003A2C;
 }
 
 img.logo {
+    grid-column-start: 1;
+    grid-column-end: 2;
     width: 15%;
-    text-align: left;
+
     margin: 10px;
 }
 
 div.gridlayout {
     display: grid;
+    /* grid-column: 2; */
 }
 h2 {
     margin: 0.5em 1em;
@@ -43,10 +47,11 @@ h3 {
 }
 p {
     margin: 1em 3em;
+    font-size: 1em;
+    line-height: 20px;
 }
 div.intro {
     display: grid;
-    grid-template-columns: 50%;
 }
 h2.intro-title {
     grid-row-start: 1;
@@ -60,46 +65,177 @@ p.intro-info {
     /* width: 50%; */
 }
 img.intro {
-    grid-row-start: 2;
+    grid-row-start: 1;
     grid-row-end: 3;
     grid-column-start: 2;
     grid-column-end: 3;
 }
 div.room {
+    display: grid;
+    /* grid-template-columns: auto auto auto auto auto; */
+    grid-template-rows: auto auto auto;
     background-color: #004E42;
     color: white;
+    width: 100%;
+}
+h2.room {
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+img.room1 {
+    /* width: 24vw; */
+    height: 15em;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    /* margin: 2em; */
+}
+img.room2 {
+    /* width: 24vw; */
+    height: 15em;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    /* margin: 2em; */
+}
+img.room3 {
+    /* width: 24vw; */
+    height: 15em;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    /* margin: 2em; */
+
+}
+img.room4 {
+    /* width: 24vw; */
+    height: 15em;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 4;
+    grid-column-end: 5;
+    /* margin: 2em; */
+}
+p.room {
+    grid-row-start: 3;
+    grid-row-end: 4;
+    /* grid-column-start: 2;
+    grid-column-end: 3;*/
+}
+div.room {
+    width: 100%;
 }
 
-div.teacher {}
+div.teacher {
+    display: grid;
+    background-color: white;
+}
 
 div.history {
+    display: grid;
     background-color: #003A2C;
     color: white;
 
 }
 
-div.level {}
-img.learning {
+div.level {
+    display: grid;
+    background-color: white;
+
+}
+h2.level{
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+h3.beginner{
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+h3.advance{
+    grid-row-start: 5;
+    grid-row-end: 6;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+p.beginner1{
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+p.beginner2{
+    grid-row-start: 4;
+    grid-row-end: 5;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+p.advance1{
+    grid-row-start: 6;
+    grid-row-end: 7;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+p.advance2{
+    grid-row-start: 7;
+    grid-row-end: 8;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+div.level img {
+    width: 40vw;
+}
+img.learning1 {
     margin: 1em;
-    width: 40%;
+    grid-row-start: 3;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+img.learning2 {
+    margin: 1em;
+    grid-row-start: 4;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+img.learning3 {
+    margin: 1em;
+    grid-row-start: 6;
+    grid-column-start: 1;
+    grid-column-end: 2;
 }
 div.timeline {
+    display: grid;
     background-color: #004E42;
     color: white;
 
 }
 
-div.contest {}
+div.contest {
+    display: grid;
+    background-color: white;
+
+}
 
 div.resource {
+    display: grid;
     background-color: #003A2C;
     color: white;
     
 }
 
-div.about {}
+div.about {
+    display: grid;
+    background-color: white;
+
+}
 
 div.licence {
+    display: grid;
     background-color: #004E42;
     color: white;
 }
