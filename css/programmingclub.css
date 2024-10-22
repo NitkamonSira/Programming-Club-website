@@ -41,14 +41,14 @@ div.gridlayout {
 }
 h2 {
     margin: 0.5em 2%;
-    font-size: 2em;
+    font-size: 3vw;
 }
 h3 {
     margin: 4%;
 }
 p {
     margin: 1em 5%;
-    font-size: 1.5em;
+    font-size: 1.8vw;
     line-height: auto;
 }
 div.intro {
@@ -243,6 +243,9 @@ div.about {
 h2.about {
     color: #003A2C;
 
+}
+a {
+    color: #00AB8E;
 }
 div.licence {
     display: grid;
