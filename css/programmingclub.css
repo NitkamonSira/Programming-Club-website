@@ -30,7 +30,7 @@ section.heading {
 img.logo {
     grid-column-start: 1;
     grid-column-end: 2;
-    width: 15%;
+    max-width: 15%;
 
     margin: 10px;
 }
@@ -40,15 +40,16 @@ div.gridlayout {
     /* grid-column: 2; */
 }
 h2 {
-    margin: 0.5em 1em;
+    margin: 0.5em 2%;
+    font-size: 2em;
 }
 h3 {
-    margin: 2em;
+    margin: 4%;
 }
 p {
-    margin: 1em 3em;
-    font-size: 1em;
-    line-height: 20px;
+    margin: 1em 5%;
+    font-size: 1.5em;
+    line-height: auto;
 }
 div.intro {
     display: grid;
@@ -56,6 +57,7 @@ div.intro {
 h2.intro-title {
     grid-row-start: 1;
     grid-row-end: 2;
+    color: #003A2C;
 }
 p.intro-info {
     grid-row-start: 2;
@@ -72,52 +74,33 @@ img.intro {
 }
 div.room {
     display: grid;
-    /* grid-template-columns: auto auto auto auto auto; */
-    grid-template-rows: auto auto auto;
+    
     background-color: #004E42;
     color: white;
-    width: 100%;
+   
 }
 h2.room {
     grid-row-start: 1;
     grid-row-end: 2;
 }
-img.room1 {
-    /* width: 24vw; */
-    height: 15em;
-    grid-row-start: 2;
-    grid-row-end: 3;
-    grid-column-start: 1;
-    /* margin: 2em; */
-}
-img.room2 {
-    /* width: 24vw; */
-    height: 15em;
-    grid-row-start: 2;
-    grid-row-end: 3;
-    grid-column-start: 2;
-    grid-column-end: 3;
-    /* margin: 2em; */
-}
-img.room3 {
-    /* width: 24vw; */
-    height: 15em;
-    grid-row-start: 2;
-    grid-row-end: 3;
-    grid-column-start: 3;
-    grid-column-end: 4;
-    /* margin: 2em; */
+div.room-image{
+    margin: 0 2%;
+    display: grid;
+    grid-template-columns: 14.64% 27.45% 27.45% 27.45%;
+    column-gap: 1%;
+    align-items: center;
 
 }
-img.room4 {
-    /* width: 24vw; */
-    height: 15em;
+img.room {
+    /* column-gap: 1%; */
+    /* margin: 0 2%; */
+    /* height: 13em;  */
     grid-row-start: 2;
-    grid-row-end: 3;
-    grid-column-start: 4;
-    grid-column-end: 5;
-    /* margin: 2em; */
+    max-width: 100%;
+    object-fit: cover;
+
 }
+
 p.room {
     grid-row-start: 3;
     grid-row-end: 4;
@@ -133,16 +116,33 @@ div.teacher {
     background-color: white;
 }
 
+h2.teacher {
+    color: #003A2C;
+}
+
 div.history {
     display: grid;
     background-color: #003A2C;
     color: white;
-
+    grid-template-columns: 70% 20%;
+    column-gap: 5%;
 }
+h2.history {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+img.prize {
+    /* grid-column-start: 2; */
+    max-width: 100%;
+    margin: 0 3% 10% 0;
+}
+
 
 div.level {
     display: grid;
     background-color: white;
+    grid-template-columns: 40% 58%;
+    gap: 2%;
 
 }
 h2.level{
@@ -150,6 +150,8 @@ h2.level{
     grid-row-end: 2;
     grid-column-start: 1;
     grid-column-end: 2;
+    color: #003A2C;
+
 }
 h3.beginner{
     grid-row-start: 2;
@@ -208,6 +210,11 @@ img.learning3 {
     grid-column-start: 1;
     grid-column-end: 2;
 }
+h3.level {
+    color: #004E42;
+
+}
+
 div.timeline {
     display: grid;
     background-color: #004E42;
@@ -233,9 +240,14 @@ div.about {
     background-color: white;
 
 }
+h2.about {
+    color: #003A2C;
 
+}
 div.licence {
     display: grid;
     background-color: #004E42;
     color: white;
+    text-align: center;
+    font-size: 0.75em;
 }
