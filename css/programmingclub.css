@@ -47,7 +47,7 @@ h3 {
     margin: 4%;
 }
 p {
-    margin: 1em 5%;
+    margin: 0 5%;
     font-size: 1.8vw;
     line-height: auto;
 }
@@ -219,7 +219,7 @@ div.timeline {
     display: grid;
     background-color: #004E42;
     color: white;
-
+    white-space: pre;
 }
 
 div.contest {
