@@ -45,9 +45,10 @@ h2 {
 }
 h3 {
     margin: 4%;
+    font-size: 2.3vw;
 }
 p {
-    margin: 0 5%;
+    margin: 2% 5%;
     font-size: 1.8vw;
     line-height: auto;
 }
@@ -66,12 +67,7 @@ p.intro-info {
     grid-column-end: 2;
     /* width: 50%; */
 }
-img.intro {
-    grid-row-start: 1;
-    grid-row-end: 3;
-    grid-column-start: 2;
-    grid-column-end: 3;
-}
+
 div.room {
     display: grid;
     
@@ -131,11 +127,7 @@ h2.history {
     grid-column-start: 1;
     grid-column-end: 3;
 }
-img.prize {
-    /* grid-column-start: 2; */
-    max-width: 100%;
-    margin: 0 3% 10% 0;
-}
+
 
 
 div.level {
@@ -146,73 +138,14 @@ div.level {
 
 }
 h2.level{
-    grid-row-start: 1;
-    grid-row-end: 2;
-    grid-column-start: 1;
-    grid-column-end: 2;
     color: #003A2C;
-
-}
-h3.beginner{
-    grid-row-start: 2;
-    grid-row-end: 3;
-    grid-column-start: 1;
-    grid-column-end: 2;
-}
-h3.advance{
-    grid-row-start: 5;
-    grid-row-end: 6;
-    grid-column-start: 1;
-    grid-column-end: 2;
-}
-p.beginner1{
-    grid-row-start: 3;
-    grid-row-end: 4;
-    grid-column-start: 2;
-    grid-column-end: 3;
-}
-p.beginner2{
-    grid-row-start: 4;
-    grid-row-end: 5;
-    grid-column-start: 2;
-    grid-column-end: 3;
-}
-p.advance1{
-    grid-row-start: 6;
-    grid-row-end: 7;
-    grid-column-start: 2;
-    grid-column-end: 3;
-}
-p.advance2{
-    grid-row-start: 7;
-    grid-row-end: 8;
-    grid-column-start: 2;
-    grid-column-end: 3;
-}
-div.level img {
-    width: 40vw;
-}
-img.learning1 {
-    margin: 1em;
-    grid-row-start: 3;
-    grid-column-start: 1;
-    grid-column-end: 2;
-}
-img.learning2 {
-    margin: 1em;
-    grid-row-start: 4;
-    grid-column-start: 1;
-    grid-column-end: 2;
-}
-img.learning3 {
-    margin: 1em;
-    grid-row-start: 6;
-    grid-column-start: 1;
-    grid-column-end: 2;
 }
 h3.level {
     color: #004E42;
 
+}
+img.learning {
+    max-width: 100%;
 }
 
 div.timeline {
@@ -225,10 +158,20 @@ div.timeline {
 div.contest {
     display: grid;
     background-color: white;
+    grid-template-columns: auto auto;
 
 }
+h2.contest {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+img.prize {
+    /* grid-column-start: 2; */
+    max-width: 100%;
+    margin: 0 3% 10% 0;
+}
 
-div.resource {
+div.achievement {
     display: grid;
     background-color: #003A2C;
     color: white;
@@ -254,3 +197,4 @@ div.licence {
     text-align: center;
     font-size: 0.75em;
 }
+
