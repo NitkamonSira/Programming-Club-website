@@ -17,7 +17,7 @@ section.hero-img {
 h1.title {
     margin-top: 0;
     margin-bottom: 0;
-    padding: 1em;
+    padding: 1.5em 1em;
     font-size: auto;
     text-align: left;
 
@@ -30,7 +30,7 @@ section.heading {
 img.logo {
     grid-column-start: 1;
     grid-column-end: 2;
-    max-width: 15%;
+    width: 13vw;
 
     margin: 10px;
 }
@@ -47,10 +47,15 @@ h3 {
     margin: 4%;
     font-size: 2.3vw;
 }
+h4 {
+    margin: 1% 4.5%;
+    font-size: 2vw;
+}
 p {
     margin: 2% 5%;
     font-size: 1.8vw;
-    line-height: auto;
+    line-height: 1.5em;
+
 }
 div.intro {
     display: grid;
@@ -120,7 +125,7 @@ div.history {
     display: grid;
     background-color: #003A2C;
     color: white;
-    grid-template-columns: 70% 20%;
+    /* grid-template-columns: 70% 20%; */
     column-gap: 5%;
 }
 h2.history {
@@ -135,17 +140,25 @@ div.level {
     background-color: white;
     grid-template-columns: 40% 58%;
     gap: 2%;
-
+    place-items: center;
 }
 h2.level{
     color: #003A2C;
 }
 h3.level {
     color: #004E42;
+    grid-column-start: 1;
+    text-align: left;
 
 }
+
+div.level p {
+}
+
 img.learning {
     max-width: 100%;
+    grid-column-start: 1;
+    align-items: center;
 }
 
 div.timeline {
@@ -158,25 +171,44 @@ div.timeline {
 div.contest {
     display: grid;
     background-color: white;
-    grid-template-columns: auto auto;
+    grid-template-columns: 50% auto;
 
 }
 h2.contest {
     grid-column-start: 1;
     grid-column-end: 3;
 }
-img.prize {
-    /* grid-column-start: 2; */
+img.contest {
     max-width: 100%;
-    margin: 0 3% 10% 0;
 }
+section.contest {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+
 
 div.achievement {
     display: grid;
     background-color: #003A2C;
     color: white;
+    grid-template-columns: 50% 35%;
+    gap: 1% 7%;
     
 }
+h2.result {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+p.achievement {
+    font-size: 1.3em;
+}
+img.prize {
+    grid-column-start: 2;
+    max-width: 100%;
+    margin: 0 3% 10% 0;
+}
+
 
 div.about {
     display: grid;
@@ -187,6 +219,19 @@ h2.about {
     color: #003A2C;
 
 }
+h3.inschool {
+    margin: 2% 4%;
+}
+
+h4.class {
+    margin: 1.5% 4.5%;
+}
+
+p.info {
+    font-size: 1.5vw;
+    margin: 1% 5%;
+}
+
 a {
     color: #00AB8E;
 }
@@ -195,6 +240,9 @@ div.licence {
     background-color: #004E42;
     color: white;
     text-align: center;
-    font-size: 0.75em;
+    font-size: 0.75vw;
+}
+p.licence {
+    margin: 1%;
 }
 
