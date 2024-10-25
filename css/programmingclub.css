@@ -3,6 +3,7 @@ body {
     font-family: 'Public sans';
     margin: 0;
 }
+
 section.hero-img {
     color: white;
     background-color: rgb(68, 68, 68);
@@ -26,7 +27,11 @@ section.heading {
     display: grid;
     background-color: #003A2C;
 }
-
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
 img.logo {
     grid-column-start: 1;
     grid-column-end: 2;
@@ -34,28 +39,32 @@ img.logo {
 
     margin: 10px;
 }
-
+div {
+    padding: 1em 10% 2vh 10%;
+}
 div.gridlayout {
     display: grid;
+    padding: 0;
 }
 h2 {
-    margin: 2%;
+    margin: 1% 10%;
     font-size: 3vw;
 }
 h3 {
-    margin: 4%;
+    margin: 2% 11%;
     font-size: 2.3vw;
 }
 h4 {
-    margin: 1% 4.5%;
+    margin: 1% 4%;
     font-size: 2vw;
 }
 p {
-    margin: 1% 5% 2% 5%;
+    margin: 1% 10% 2% 8%;
     font-size: 1.8vw;
     line-height: 1.5em;
-
+    white-space: pre-wrap;
 }
+
 div.intro {
     display: grid;
 }
@@ -77,18 +86,21 @@ div.room {
     
     background-color: #004E42;
     color: white;
-   
+    /* padding-left: 0;
+    padding-right: 0; */
 }
 h2.room {
     grid-row-start: 1;
     grid-row-end: 2;
 }
 div.room-image{
-    margin: 0 2%;
+    margin: 0 10%;
     display: grid;
     grid-template-columns: 14.64% 27.45% 27.45% 27.45%;
     column-gap: 1%;
     align-items: center;
+    padding-left: 0;
+    padding-right: 0;
 
 }
 img.room {
@@ -101,12 +113,9 @@ img.room {
 p.room {
     grid-row-start: 3;
     grid-row-end: 4;
-    /* grid-column-start: 2;
-    grid-column-end: 3;*/
+    /* margin: auto 10%; */
 }
-div.room {
-    width: 100%;
-}
+
 
 div.teacher {
     display: grid;
@@ -134,22 +143,26 @@ h2.history {
 div.level {
     display: grid;
     background-color: white;
-    grid-template-columns: 40% 58%;
+    grid-template-columns: 30% 68%;
     gap: 0 2%;
     place-items: center;
     margin-left: 2vw;
-    max-height: max-content;
 }
 h2.level{
     color: #003A2C;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    margin-left: -40%;
 }
 h3.level {
     color: #004E42;
     grid-column-start: 1;
+    grid-column-end: 3;
+    place-items: start;
 
 }
 p.beginner {
-    margin: 5% 0;
+    margin-bottom: 5%;
 }
 p.advance-prog {
     grid-column-start: 1;
@@ -166,33 +179,36 @@ div.timeline {
     display: grid;
     background-color: #004E42;
     color: white;  
-    white-space: pre;
 }
 
 div.contest {
     display: grid;
     background-color: white;
     grid-template-columns: 50% auto;
+    place-items: center;
+
 
 }
 h2.contest {
     grid-column-start: 1;
     grid-column-end: 3;
     color: #003A2C;
+    margin-left: -55%;
 
 }
 img.contest {
-    max-width: 100%;
+    max-width: 90%;
+    margin-left: 10%;
 }
 section.contest {
     grid-column-start: 1;
     grid-column-end: 3;
 }
 h3.contest-info {
-    margin: 2% 4%;
+    margin: 2% 12%;
 }
 section.nzpc h3 {
-    margin: 4%;
+    margin: 4% 12%;
 }
 
 
@@ -200,21 +216,17 @@ div.achievement {
     display: grid;
     background-color: #003A2C;
     color: white;
-    /* gap: 1% 7%; */
     align-items: center;
+    text-align: center;
     
 }
 div.achimg {
     display: grid;
     grid-template-columns: 43.64% 53.36%;
     gap: 3%;
-    margin: auto 3%;
+    margin: auto 10%;
 }
-h2.result {
-}
-p.achievement {
-    /* font-size: 1.3em; */
-}
+
 img.prize {
     max-width: 100%;
 }
@@ -255,6 +267,7 @@ div.licence {
     color: white;
     text-align: center;
     font-size: 0.75vw;
+    padding: 0;
 }
 p.licence {
     margin: 1%;
