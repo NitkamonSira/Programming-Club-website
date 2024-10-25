@@ -37,10 +37,9 @@ img.logo {
 
 div.gridlayout {
     display: grid;
-    /* grid-column: 2; */
 }
 h2 {
-    margin: 0.5em 2%;
+    margin: 2%;
     font-size: 3vw;
 }
 h3 {
@@ -52,7 +51,7 @@ h4 {
     font-size: 2vw;
 }
 p {
-    margin: 2% 5%;
+    margin: 1% 5% 2% 5%;
     font-size: 1.8vw;
     line-height: 1.5em;
 
@@ -93,9 +92,6 @@ div.room-image{
 
 }
 img.room {
-    /* column-gap: 1%; */
-    /* margin: 0 2%; */
-    /* height: 13em;  */
     grid-row-start: 2;
     max-width: 100%;
     object-fit: cover;
@@ -139,8 +135,10 @@ div.level {
     display: grid;
     background-color: white;
     grid-template-columns: 40% 58%;
-    gap: 2%;
+    gap: 0 2%;
     place-items: center;
+    margin-left: 2vw;
+    max-height: max-content;
 }
 h2.level{
     color: #003A2C;
@@ -148,11 +146,14 @@ h2.level{
 h3.level {
     color: #004E42;
     grid-column-start: 1;
-    text-align: left;
 
 }
-
-div.level p {
+p.beginner {
+    margin: 5% 0;
+}
+p.advance-prog {
+    grid-column-start: 1;
+    grid-column-end: 3;
 }
 
 img.learning {
@@ -164,7 +165,7 @@ img.learning {
 div.timeline {
     display: grid;
     background-color: #004E42;
-    color: white;
+    color: white;  
     white-space: pre;
 }
 
@@ -177,6 +178,8 @@ div.contest {
 h2.contest {
     grid-column-start: 1;
     grid-column-end: 3;
+    color: #003A2C;
+
 }
 img.contest {
     max-width: 100%;
@@ -185,28 +188,35 @@ section.contest {
     grid-column-start: 1;
     grid-column-end: 3;
 }
-
+h3.contest-info {
+    margin: 2% 4%;
+}
+section.nzpc h3 {
+    margin: 4%;
+}
 
 
 div.achievement {
     display: grid;
     background-color: #003A2C;
     color: white;
-    grid-template-columns: 50% 35%;
-    gap: 1% 7%;
+    /* gap: 1% 7%; */
+    align-items: center;
     
 }
+div.achimg {
+    display: grid;
+    grid-template-columns: 43.64% 53.36%;
+    gap: 3%;
+    margin: auto 3%;
+}
 h2.result {
-    grid-column-start: 1;
-    grid-column-end: 3;
 }
 p.achievement {
-    font-size: 1.3em;
+    /* font-size: 1.3em; */
 }
 img.prize {
-    grid-column-start: 2;
     max-width: 100%;
-    margin: 0 3% 10% 0;
 }
 
 
@@ -221,10 +231,14 @@ h2.about {
 }
 h3.inschool {
     margin: 2% 4%;
+    color: #004E42;
+
 }
 
 h4.class {
     margin: 1.5% 4.5%;
+    color: #004E42;
+
 }
 
 p.info {
